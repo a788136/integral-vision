@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import Nav from './nav';
 import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
+import logo from "../../../public/logo-integral.svg";
+import Image from 'next/image'
 
 const Header = forwardRef(function index(props, ref) {
 
@@ -17,7 +19,9 @@ const Header = forwardRef(function index(props, ref) {
 
   return (
     <>
+      
       <div className={styles.header}>
+        <Image ref={ref} className={styles.logo__img} priority src={logo} alt="logo" /> 
           <Magnetic>
             <div onClick={() => {setIsActive(!isActive)}}>
               <div ref={ref} className={`${styles.navIcon} ${isActive ? styles.open : ""}`}>
