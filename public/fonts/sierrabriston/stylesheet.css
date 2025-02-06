@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Sierra Briston';
+    src: url('SierraBriston-Regular.eot');
+    src: url('SierraBriston-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SierraBriston-Regular.woff2') format('woff2'),
+        url('SierraBriston-Regular.woff') format('woff'),
+        url('SierraBriston-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

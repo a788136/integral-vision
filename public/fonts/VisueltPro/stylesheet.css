@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Visuelt Pro';
+    src: url('VisueltPro-Bold.eot');
+    src: url('VisueltPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('VisueltPro-Bold.woff2') format('woff2'),
+        url('VisueltPro-Bold.woff') format('woff'),
+        url('VisueltPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

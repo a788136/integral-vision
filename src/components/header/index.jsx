@@ -1,10 +1,6 @@
 import { forwardRef } from 'react';
 import styles from './style.module.scss';
 import Magnetic from '../magnetic';
-
-
-
-
 import { useEffect, useState } from 'react';
 import Nav from './nav';
 import { AnimatePresence } from 'framer-motion';
