@@ -19,9 +19,10 @@ const Header = forwardRef(function index(props, ref) {
 
   return (
     <>
-      
-      <div className={styles.header}>
-        <Image ref={ref} className={styles.logo__img} priority src={logo} alt="logo" /> 
+        <div className={styles.logoWrapper}>
+          <Image className={styles.logo__img} src={logo} alt="logo" /> 
+        </div>
+        <div className={styles.header}>
           <Magnetic>
             <div onClick={() => {setIsActive(!isActive)}}>
               <div ref={ref} className={`${styles.navIcon} ${isActive ? styles.open : ""}`}>
@@ -31,7 +32,7 @@ const Header = forwardRef(function index(props, ref) {
               </div>
             </div>
           </Magnetic>
-      </div>
+        </div>
       <AnimatePresence mode="wait">
         {isActive && <Nav />}
       </AnimatePresence>
